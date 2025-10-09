@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - El Refugio</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Estilo propio -->
+  <link rel="stylesheet" href="/estilos.css" />
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/imagenes/er-logo.png" alt="Logo del refugio" class="logo-img me-2" />
+        <span>El Refugio</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/paginas/cachorros.html">Cachorros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/paginas/contacto.html">Contacto</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container" style="margin-top: 100px;">
+    <h1 class="text-center mb-5">Contacto 🐕</h1>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form class="p-4 shadow rounded bg-light">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="+54 9 ..." />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu consulta aquí..." required></textarea>
+          </div>
+
+            <!-- Footer -->
+  <footer class="footer bg-dark text-light pt-4 mt-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Refugio de Perros</h5>
+          <p class="small">Cuidamos, rescatamos y damos amor a nuestros amigos de cuatro patas 🐶</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled small">
+            <li><a href="/index.html" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="/paginas/cachorros.html" class="text-light text-decoration-none">Cachorros</a></li>
+            <li><a href="/paginas/contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Seguinos</h5>
+            <p>Instagram: @ElRefugioMDQ</p>
+            <p>Facebook: El Refugio MDQ</p>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <p class="mb-0 pb-2 small">&copy; <span id="year"></span> El Refugio. Todos los derechos reservados.</p>
+    </div>
+  </footer>

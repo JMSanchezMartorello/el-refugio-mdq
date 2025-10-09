@@ -1,0 +1,150 @@
+/* ======== RESETEO GENERAL ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+/* ======== NAVBAR ======== */
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 40px;
+  border-radius: 0%;
+  
+}
+
+.nav-link {
+  color: #ccc !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+/* ======== HERO / PORTADA ======== */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/hero-bg.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; /* espacio para navbar fija */
+}
+
+.hero-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.hero .btn {
+  background-color: #198754;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.hero .btn:hover {
+  background-color: #157347;
+  transform: scale(1.05);
+}
+
+
+/* ======== SECCIONES ======== */
+main {
+  margin-top: 4rem;
+}
+
+section h2 {
+  color: #222;
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #222;
+  color: #ccc;
+}
+
+footer p {
+  margin-bottom: 0.3rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+
+
