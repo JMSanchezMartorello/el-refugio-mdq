@@ -1,0 +1,15 @@
+@mixin respond($bp) {
+  @if $bp == md { @media (max-width: 768px) { @content; } }
+  @else if $bp == sm { @media (max-width: 576px) { @content; } }
+}
+
+@mixin btn($bg, $color: #fff) {
+  background: $bg;
+  color: $color;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+  &:hover { transform: translateY(-3px); }
+}

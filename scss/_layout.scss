@@ -1,0 +1,31 @@
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 0;
+}
+.brand{display:flex;align-items:center;gap:.75rem;
+  &__img{width:70px;height:auto;object-fit:contain;border-radius:0;}
+  &__title{font-weight:700;font-size:1.1rem;color:$text;}
+}
+.main-nav__list{list-style:none;display:flex;gap:1rem;margin:0;padding:0;
+  li{ a{padding:.25rem .5rem;}}
+}
+
+.hero{
+  background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("../imagenes/hero-bg.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  text-align:center;
+  padding:4rem 1rem;
+  &__logo{width:110px;height:auto;}
+  &__title{font-size:2.4rem;margin:.5rem 0;}
+  &__lead{font-size:1.05rem;opacity:.95;}
+}
+
+.footer-inner{ text-align:center;padding:1.5rem 0;background:darken($bg,10%); }
